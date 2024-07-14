@@ -1,247 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Enthlh</title>
-	<style type="text/css">
-		body {
-			background-color: rgb(64, 64, 64);
-			max-width: 720px;
-			margin: 0 auto;
-		}
-		p {
-			font-family: sans-serif;
-		}
-		.profile-picture {
-			border-radius: 50%;
-			width: 100px;
-			height: 100px;
-			position:relative;
-			left:50%;
-			transform:translate(-50%);
-			margin-bottom: 20px;
-			box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1), 0 0 30px 10px rgba(64, 64, 64, 0.9);
-		}
-		.identitas {
-			width:100%;
-			height:100%;
-			background-color:grey;
-			border-radius:10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		}
-		.identitas p, h2 {
-			text-align:center;
-			margin-bottom:10px;
-			color:white;
-		}
-		.identitas a {
-			text-decoration:none;
-			color:white;
-			transition:ease-in-out 0.8s;
-		}
-		.identitas a:hover {
-			color:grey;
-		}
-		.about {
-			width:100%;
-			height:100%;
-			background-color:#333333;
-			border-radius:10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			transition: background-color 0.3s, transform 0.3s;
-		}
-		.about:hover {
-			background-color: #555555;
-			transform: scale(1.05);
-		}
-		.about p {
-			text-align:center;
-		}
-		.about a {
-			color:white;
-			transition:ease-in-out 0.8s;
-		}
-		.about a:hover {
-			color:grey;
-		}
-		.quote {
-			width:100%;
-			height:100%;
-			border-radius:10px;
-			background-color:#333333;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			color:white;
-			transition: background-color 0.3s, transform 0.3s;
-		}
-		.quote:hover {
-			background-color: #555555;
-			transform: scale(1.05);
-		}
-		.contact-me {
-			margin-top: 40px;
-			text-align: center;
-		}
-		
-		.contact-me h2 {
-			font-size: 1.5em;
-			margin-bottom: 20px;
-		}
-		
-		.contact-info {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-			align-items: center;
-		}
-		
-		.contact-info a {
-			text-decoration: none;
-			color: #ffffff;
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			height:100px;
-			background-color: #333333;
-			border-radius: 5px;
-			transition: background-color 0.3s, transform 0.3s;
-			width: 100%;
-			justify-content: flex-start; /* Menempatkan ikon di sebelah kiri */
-			font-family: sans-serif;
-		}
-		
-		.contact-info a:hover {
-			background-color: #555555;
-			transform: scale(1.05);
-		}
-		
-		.contact-info img {
-			width: 25px;
-			height: 25px;
-		}
-		#link {
-			text-decoration:underline;
-		}
-		@media (max-width: 720px;) {
-			.profile-picture {
-        	    border-radius: 50%;
-        	    width: 100px;
-        	    height: 100px;
-        	    display: block;
-        	    margin: 20px auto;
-        	    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1), 0 0 30px 10px rgba(64, 64, 64, 0.9);
-        	}
-        	.identitas, .about, .quote {
-        	    max-width: 800px;
-        	    margin: 20px auto;
-        	    padding: 20px;
-        	    background-color: #333333;
-        	    border-radius: 10px;
-        	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        	    color: white;
-        	    transition: background-color 0.3s, transform 0.3s;
-        	}
-        	.identitas h2, .about h3 {
-        	    text-align: center;
-        	}
-        	.identitas a, .about a {
-        	    text-decoration: none;
-        	    color: white;
-        	    transition: ease-in-out 0.8s;
-        	}
-        	.identitas a:hover, .about a:hover {
-        	    color: grey;
-        	}
-        	.about:hover, .quote:hover {
-        	    background-color: #555555;
-        	    transform: scale(1.05);
-        	}
-        	.contact-me {
-        	    margin-top: 40px;
-        	    text-align: center;
-        	}
-        	.contact-me h2 {
-        	    font-size: 1.5em;
-        	    margin-bottom: 20px;
-        	}
-        	.contact-info {
-        	    display: flex;
-        	    flex-direction: column;
-        	    gap: 10px;
-        	    align-items: center;
-        	}
-        	.contact-info a {
-            	text-decoration: none;
-    	        color: #ffffff;
-    	        display: flex;
-            	align-items: center;
-    	        gap: 10px;
-    	        height: 100px;
-        	    background-color: #333333;
-    	        border-radius: 5px;
-            	transition: background-color 0.3s, transform 0.3s;
-            	width: 100%;
-    	        max-width: 720px;
-    	        justify-content: flex-start; /* Menempatkan ikon di sebelah kiri */
-    	    }
-    	    .contact-info a:hover {
-    	        background-color: #555555;
-    	        transform: scale(1.05);
-    	    }
-    	    .contact-info img {
-    	        width: 25px;
-    	        height: 25px;
-    	    }
-    	   	 #link {
-    	        text-decoration: underline;
-        	}
-		}
-	</style>
+    <title>Alfie Luxiona Lexandra</title>
+    <style type="text/css">
+        body {
+            background-color: rgb(64, 64, 64);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-picture {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1), 0 0 30px 10px rgba(64, 64, 64, 0.9);
+        }
+        .identitas, .about, .quote, .contact-info {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+            text-align: center;
+        }
+        .identitas h2, .about h3, .quote blockquote, .contact h2 {
+            text-align: center;
+        }
+        .identitas a, .about a {
+            text-decoration: none;
+            color: white;
+            transition: ease-in-out 0.8s;
+        }
+        .identitas a:hover, .about a:hover {
+            color: grey;
+        }
+        .about:hover, .quote:hover, .contact-info a:hover {
+            background-color: #555555;
+            transform: scale(1.05);
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 100px;
+            background-color: #333333;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .contact-info img {
+            width: 25px;
+            height: 25px;
+        }
+        #link {
+            text-decoration: underline;
+        }
+        @media (max-width: 720px) {
+            .identitas, .about, .quote, .contact-info {
+                padding: 10px;
+            }
+            .contact-info a {
+                height: auto;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<header><br>
-		<div class="identitas" ><br>
-			<img src="alfie.jpg" alt="Profile Picture" class="profile-picture">
-			<h2 style="font-family: sans-serif;">Alfie Luxiona Lexandra</h2>
-			<p>Umur: 16 tahun</p>
-			<p>Sudah bertunangan dengan <a href="https://instagram.com/c_v.aurora/" style="font-family:serif;" id="link" ><strong>Christy</strong></a></p>
-			<p>Bekerja sebagai Cybersecurity di <strong>MachaaID</strong> dan sebagai agen <strong>senjata jarak jauh</strong> di tim elit khusus <strong style="color:darkred; text-decoration:underline;"  >VIPER</strong>.</p>
-			<p>(<strong style="color:darkred;" >V</strong>isionary, <strong style="color:darkred;" >I</strong>nterception, <strong style="color:darkred;" >P</strong>recision, <strong style="color:darkred;" >E</strong>lite, <strong style="color:darkred;" >R</strong>econnaissance).</p>
-			<p>Serta Drummer & Vokalis ke-3 band <a href="https://instagram.com/blaztbandofficial/" style="font-family:serif;" id="link" ><strong>Blazt</strong></a></p><br>
-		</div><br>
-	</header>
-	
-	<main>
-		<div class="about" style="color:white;"><br>
-			<h3 style="text-align:center;"  >Hai, aku Alfie Luxiona Lexandra</h3>
-			<p><strong>Alfie</strong> adalah seorang pelajar sekolah menengah kejuruan (<a href="http://www.smkn2bandung.id/" ><strong>SMK</strong></a>) yang suka mengembangkan inovasi terbaru tentang dunia <strong>musik</strong> dan <strong>digital</strong>. Dia telah mengembangkan banyak hal di dunia musik seperti <strong>cara bermain alat musik</strong> hingga melakukan <strong>teknik vokal</strong> yang <strong>brutal</strong> (metal scream).</p>
-			<p>Di dunia <strong>digital</strong>, dia sangat gemar membuat <strong>mod game</strong> namun tidak mempublikasikannya karena dia berpikir bahwa itu adalah <strong>tindakan yang merugikan</strong>.</p>
-			<p>Semua yang telah <strong>Alfie</strong> lakukan bertujuan untuk membuat <strong>bangsa yang maju</strong> di <strong>dunia musik</strong> dan <strong>dunia digital</strong>, dan uang yang dia dapatkan selalu <strong>didonasikan</strong> sebanyak 75% ke orang yang <strong>membutuhkan</strong>.</p><br>
-		</div><br>
-		<div class="quote"><br>
-			<blockquote><strong style="font-family: sans-serif;">Quote:</strong></blockquote>
-			<blockquote>
-			"Mengejar mimpi membutuhkan ketekunan, keberanian, dan keyakinan. Prosesnya penuh tantangan dan ketidakpastian, namun itulah yang membuatnya bermakna. Jalannya mungkin berliku, tetapi dengan perencanaan yang baik dan keberanian untuk keluar dari zona nyaman, impian bisa menjadi kenyataan. Mengejar mimpi adalah tentang menemukan kebahagiaan dan pertumbuhan pribadi. Jadi, teruslah mengejar mimpi dengan keyakinan, karena di ujung perjalanan itu, kepuasan dan kebahagiaan menanti".
-			</blockquote><br>
-		</div><br>
-	</main>
-	
-	<footer>
-		<div class="contact" >
-			<h2>Kontak:</h2>
-		</div>
-		<div class="contact-info">
-			<a href="https://Instagram.com/alluxndra" target="_blank"><br>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">   @Alluxndra
-			</a>
-			<a href="https://twitter.com/Aluxndra" target="_blank"><br>
-			<img src="https://seeklogo.com/images/T/twitter-x-logo-101C7D2420-seeklogo.com.png?v=638258862800000000" alt="Twitter">   @Aluxndra
-			</a>
-			<a href="https://wa.me/628980547272"><br>
-			<img src="https://www.svgrepo.com/show/303147/whatsapp-icon-logo.svg" alt="Phone">   Whatsapp
-			</a>
-			<a href="mailto:alfielexa@proton.me"><br>
-			<img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="Email">   alfielexa@proton.me
-			</a>
-		</div><br>
-	</footer>
+    <header><br>
+        <div class="identitas"><br>
+            <img src="alfie.jpg" alt="Profile Picture" class="profile-picture">
+            <h2>Alfie Luxiona Lexandra</h2>
+            <p>Umur: 16 tahun</p>
+            <p>Sudah bertunangan dengan <a href="https://instagram.com/c_v.aurora/" id="link"><strong>Christy</strong></a></p>
+            <p>Bekerja sebagai Cybersecurity di <strong>MachaaID</strong> dan sebagai agen <strong>senjata jarak jauh</strong> di tim elit khusus <strong style="color:darkred; text-decoration:underline;">VIPER</strong>.</p>
+            <p>(<strong style="color:darkred;">V</strong>isionary, <strong style="color:darkred;">I</strong>nterception, <strong style="color:darkred;">P</strong>recision, <strong style="color:darkred;">E</strong>lite, <strong style="color:darkred;">R</strong>econnaissance).</p>
+            <p>Drummer & Vokalis ke-3 band <a href="https://instagram.com/blaztbandofficial/" id="link"><strong>Blazt</strong></a></p><br>
+        </div><br>
+    </header>
+    
+    <main>
+        <div class="about"><br>
+            <h3>Hai, aku Alfie Luxiona Lexandra</h3>
+            <p><strong>Alfie</strong> adalah seorang pelajar sekolah menengah kejuruan (<a href="http://www.smkn2bandung.id/"><strong>SMK</strong></a>) yang suka mengembangkan inovasi terbaru tentang dunia <strong>musik</strong> dan <strong>digital</strong>. Dia telah mengembangkan banyak hal di dunia musik seperti <strong>cara bermain alat musik</strong> hingga melakukan <strong>teknik vokal</strong> yang <strong>brutal</strong> (metal scream).</p>
+            <p>Di dunia <strong>digital</strong>, dia sangat gemar membuat <strong>mod game</strong> namun tidak mempublikasikannya karena dia berpikir bahwa itu adalah <strong>tindakan yang merugikan</strong>.</p>
+            <p>Semua yang telah <strong>Alfie</strong> lakukan bertujuan untuk membuat <strong>bangsa yang maju</strong> di <strong>dunia musik</strong> dan <strong>dunia digital</strong>, dan uang yang dia dapatkan selalu <strong>didonasikan</strong> sebanyak 75% ke orang yang <strong>membutuhkan</strong>.</p><br>
+        </div><br>
+        <div class="quote"><br>
+            <blockquote><strong>Quote:</strong></blockquote>
+            <blockquote>
+                "Mengejar mimpi membutuhkan ketekunan, keberanian, dan keyakinan. Prosesnya penuh tantangan dan ketidakpastian, namun itulah yang membuatnya bermakna. Jalannya mungkin berliku, tetapi dengan perencanaan yang baik dan keberanian untuk keluar dari zona nyaman, impian bisa menjadi kenyataan. Mengejar mimpi adalah tentang menemukan kebahagiaan dan pertumbuhan pribadi. Jadi, teruslah mengejar mimpi dengan keyakinan, karena di ujung perjalanan itu, kepuasan dan kebahagiaan menanti".
+            </blockquote><br>
+        </div><br>
+    </main>
+    
+    <footer>
+        <div class="contact-info">
+            <h2>Kontak:</h2>
+            <a href="https://Instagram.com/alluxndra" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">   @Alluxndra
+            </a>
+            <a href="https://twitter.com/Aluxndra" target="_blank">
+                <img src="https://seeklogo.com/images/T/twitter-x-logo-101C7D2420-seeklogo.com.png?v=638258862800000000" alt="Twitter">   @Aluxndra
+            </a>
+            <a href="https://wa.me/628980547272">
+                <img src="https://www.svgrepo.com/show/303147/whatsapp-icon-logo.svg" alt="Whatsapp">   Whatsapp
+            </a>
+            <a href="mailto:alfielexa@proton.me">
+                <img src="https://www.svgrepo.com/show/452213/gmail.svg" alt="Email">   alfielexa@proton.me
+            </a>
+        </div><br>
+    </footer>
 </body>
 </html>
